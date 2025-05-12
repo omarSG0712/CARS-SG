@@ -1,0 +1,242 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: black;
+    height: 150px;   
+}
+body,header{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    width: 230px;
+    height: auto;
+}
+.boton{
+    position: relative;
+    flex-direction: column;
+    left: 250px;
+    bottom: 90px;
+    padding: 10px;
+    height: auto;
+    margin-left: 30px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+
+}
+.boton:hover{
+    background-color: white; /* Cambia el color del fondo */
+    color: black; /* Cambia el color del texto */
+    font-size: 18px; /* Cambia el tamaño del texto */
+    font-weight: bold; /* Cambia el grosor del texto */
+    transform: scale(1.5); /* Agranda el botón */
+}
+
+.titulo.c{
+    position: relative;
+    font-size: 3em;
+    font-family: italic;
+
+}
+
+
+
+.imagenpor{
+    position: relative;
+    width: 855px;
+    height: auto;
+    bottom: 20px;
+    
+}
+.categorias h1{
+    color: black;
+}
+
+.categorias a{
+margin: 10px;
+display: block;
+flex-direction: column;
+color: black;
+font-size: 20px;
+}
+.categorias{
+    position: relative;
+    left: 425px;
+    bottom: 535px;
+    width: 452px;              /* ancho del contenedor */
+    height: 442px;
+    padding: 15px;             /* espacio interno */
+    margin: 30px auto;         /* margen y centrado */
+    background: linear-gradient(to right,gray,black);
+    padding: 20px;
+
+}
+.categorias a{
+    text-decoration: none; 
+    border-radius: 5px;   
+    text-align: center;
+    margin-top: 20px;
+}
+.categorias a:hover {
+   background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.titulo-recien-llegados h1{
+    width: 1350px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    bottom: 570px;
+    color:black;
+    font-size: 4em;
+    background: linear-gradient(to right, black, gray,black);
+    
+}
+
+
+.catalogo  img{
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+  transition: transform 0.3s ease;
+ 
+}
+.catalogo img:hover{
+    transform: scale(1.1); /* Aumenta el tamaño suavemente */
+}
+.catalogo{
+    padding: 40px;
+    background: linear-gradient(to right, black, gray,black);
+    position: relative;
+    bottom: 580px;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ahora son 3 columnas */
+
+  padding: 20px;
+}
+.producto a{
+    text-decoration: none;
+  color: inherit;
+}
+.producto{
+    margin: 20px;
+    background-color: white;
+    gap: 20px;
+}
+.producto h3,p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+footer{
+    width: auto;
+    height: 200px;
+background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    padding: 30px 30px;
+}
+.parte-baja{
+    display: flex;
+      justify-content: space-between; /* espacio entre los divs */
+      gap: 20px; /* espacio entre ellos */
+      padding: 20px;
+     
+}
+
+.parte-interna a {
+    text-decoration: none;
+    color: inherit; /* opcional, para que use el color del texto normal */
+  }
+  footer{
+    position: relative;
+    bottom: 590px;
+  }
+.derechos-a{
+    background-color: black;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    color:white;
+    position: relative;
+    bottom: 610px;
+}
+body{
+    width: auto;
+    height: 1500px;
+}
+
+.catalogo img{
+    border-radius: 30px;
+}
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        text-align: center;
+    }
+
+    .logo {
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    .boton {
+        position: static;
+        margin: 20px auto;
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .imagenpor {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+    }
+
+    .categorias {
+        position: static;
+        width: 90%;
+        margin: 30px auto;
+        bottom: 0;
+        left: 0;
+    }
+
+    .titulo-recien-llegados h1 {
+        width: 100%;
+        font-size: 2em;
+        height: auto;
+        padding: 10px;
+        bottom: 0;
+    }
+
+    .catalogo {
+        grid-template-columns: 1fr;
+        bottom: 0;
+        padding: 10px;
+    }
+
+    .catalogo img {
+        width: 100%;
+    }
+
+    footer, .derechos-a {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .parte-baja {
+        flex-direction: column;
+        align-items: center;
+    }
+}

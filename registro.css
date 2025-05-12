@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+   font-family: 'Roboto', sans-serif;
+    background: linear-gradient(150deg, black,gray,black);
+    height: 100vh;
+}
+.contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+img{
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+.contenedor h1{
+    text-align: center;
+    padding: 0 0 5px 0 ;
+    border-bottom: 1px solid gray;
+}
+.contenedor input[type="text"],
+.contenedor input[type="email"],
+.contenedor input[type="password"] {
+  border-radius: 10px;
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 15px;
+  background-color:white;
+transition: all 0.8s ease; 
+}
+.contenedor input[type="text"]:hover,
+.contenedor input[type="email"]:hover,
+.contenedor input[type="password"]:hover {
+    background-color:red;
+    transform: scale(1.1);
+}
+input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: #3498db; /* cambia el color del checkbox moderno */
+    margin-right: 5px;
+    position: relative;
+    left: 50px;
+    top: 55px;
+  }
+  label a{
+    color: red;
+  }
+  p{
+    position: relative;
+    text-align: justify;
+    bottom: 20px;
+    font-size: 15px;
+    left: 20px;
+  }
+
+  button{
+    position: relative;
+    left: 200px;
+    bottom: 70px;
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.8s ease; 
+  }
+  button:hover{
+    background-color:blue;
+    transform: scale(1.1);
+  }

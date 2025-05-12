@@ -1,0 +1,124 @@
+body{
+    background-color: black;
+}
+.portada{
+    position: relative;
+    bottom: 40px;
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, black, gray,black);
+}
+.contenedor-producto{
+    width: 90%;
+    height: 600px;
+    margin: 50px;
+   background-color: white;
+   position: relative;
+   top: 30px;
+   border-radius: 30px;
+
+}
+
+
+  img{
+    width: 550px;
+    height: auto;
+    position: relative;
+    top: 20px;
+    border-radius: 15px;
+    left: 20px;
+}
+.info h1{
+    position: relative;
+    left: 50%;
+    bottom: 380px;;
+}
+.info p {
+    position: static; /* elimina posicionamiento */
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: justify;
+    position: relative;
+    left: 50%;
+    bottom: 400px;
+  }
+  .info ul li {
+    position: relative;
+    left: 50%;
+    bottom: 420px;
+    
+  }
+.info h2{
+    position: relative;
+    left: 50%;
+    bottom: 410px;
+}
+.info h3{
+    position: relative;
+    left: 50%;
+    bottom: 425px;
+}
+.wp-boton {
+    position: relative;
+    left: 70px;
+    bottom: 120px;
+    width: 550px;
+    height: 50px;
+    background-color: #5FFC7B;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.28s ease;
+}
+
+.wp-boton a {
+    text-decoration: none;
+    color: black; /* or any color you prefer */
+}
+.wp-boton:hover{
+   background-color: red;
+   transition: background-color 0.40s ease;
+}
+.inicio-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  text-align: center;
+  min-width: 120px; /* Asegura espacio suficiente */
+  height: 40px;
+  margin-left: 1px;
+  border-radius: 10px;
+  background-color: black;
+  position: relative;
+  top: 0; /* Eliminamos desplazamiento innecesario */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  overflow: hidden; /* Evita que contenido se desborde */
+  box-sizing: border-box;
+}
+
+.inicio-boton a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.inicio-boton:hover {
+  background-color: white;
+  border-color: black;
+}
+
+.inicio-boton:hover a {
+  color: black;
+}
